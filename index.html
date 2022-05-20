@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apello</title>
+
+    <!--Подключение шрифтов-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Нормализация стилей-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--Подлючение стилей-->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!--Шапка-->
+    <header class="header">
+      <div class="container">
+        <a class="header-logo" href="./index.html" aria-label="Logo Appello">
+          <img
+            class="logo-image"
+            src="./images/logo/logo.svg"
+            alt="Logo Appello"
+            width="27"
+            height="30"
+          />
+          Appello
+        </a>
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item"><a class="header-link" href="">Home</a></li>
+            <li class="header-item"><a class="header-link" href="">Portfolio</a></li>
+            <li class="header-item"><a class="header-link" href="">Process</a></li>
+            <li class="header-item"><a class="header-link" href="">Team</a></li>
+            <li class="header-item"><a class="header-link" href="">Resources</a></li>
+          </ul>
+        </nav>
+        <button class="header-btn" type="button">Get project quote</button>
+      </div>
+    </header>
+    <main>
+      <!--Hero-->
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">Leaders in Software Design & Development</h1>
+          <p class="hero-text">
+            Establishing a technology company takes a strong software team to deliver on what needs
+            to be done.
+          </p>
+          <a class="hero-link" href="">View our work</a>
+        </div>
+      </section>
+
+      <!--Benefits-->
+      <section>
+        <h2>Your reliable web and app development partner</h2>
+        <p>
+          We make successful products that turn great ideas into user-friendly solutions for
+          consumers and businesses.
+        </p>
+        <ul>
+          <li><p>Completely tailored software.</p></li>
+          <li><p>Daily support with project manager.</p></li>
+          <li><p>Projects delivered on time, always.</p></li>
+          <li><p>Testing and quality assurance.</p></li>
+          <li><p>Professional marketing expertise.</p></li>
+          <li><p>Transparent costs and support.</p></li>
+        </ul>
+      </section>
+
+      <!--Where are you now-->
+      <section class="step">
+        <div class="container">
+          <h2 class="step-title">Where are you now?</h2>
+          <p class="step-text">
+            Use the tabs below to identify what stage you’re at so we can help you to move on to the
+            next phase of your project.
+          </p>
+          <ul>
+            <li><button class="step-btn active" type="button">Design</button></li>
+            <li><button class="step-btn" type="button">Develop</button></li>
+            <li><button class="step-btn" type="button">Launch</button></li>
+          </ul>
+
+          <ul>
+            <li class="step-list-item">
+              <h3 class="step-subtitle">1. Research</h3>
+              <p class="step-item-text">
+                We can help you to better understand your target audience, enabling you to create a
+                more powerful value proposition for your business.
+              </p>
+            </li>
+            <li class="step-list-item">
+              <h3 class="step-subtitle">2. Requirements</h3>
+              <p class="step-item-text">
+                Based on research insights, we can help you to determine how your product and
+                service should function.
+              </p>
+            </li>
+            <li class="step-list-item">
+              <h3 class="step-subtitle">3. UI Design</h3>
+              <p class="step-item-text">
+                We’re able to create unique and aesthetically pleasing visual design solutions that
+                fulfil both your user needs and business goals.
+              </p>
+            </li>
+            <li class="step-list-item">
+              <h3 class="step-subtitle">4. Prototyping</h3>
+              <p class="step-item-text">
+                We can provide you with a clickable prototype so you can test and play with your
+                product; allowing you to get a better feel for the user experience.
+              </p>
+            </li>
+          </ul>
+          <a class="step-contact-btn" href="">Contact us</a>
+        </div>
+      </section>
+
+      <!--We’re proud of our work-->
+      <section>
+        <h2>We’re proud of our work</h2>
+        <ul>
+          <li>
+            <p><span>50+</span>Successfully completed projects</p>
+          </li>
+          <li>
+            <p><span>35+</span>Happy and appreciative customers</p>
+          </li>
+          <li>
+            <p><span>10</span>Combined years of experience</p>
+          </li>
+          <li>
+            <p><span>23</span>Experienced and talented workers</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <img src="./images/gallery/image1.jpg" alt="Eyetelligence" width="545" height="402" />
+            <h3>Eyetelligence – AI-based Eye Health</h3>
+            <p>
+              Eyetelligence is a medtech company using AI based software to recognise eye diseases.
+              Appello software developed their website which has just been released.
+            </p>
+          </li>
+          <li>
+            <img src="./images/gallery/image2.jpg" alt="Give + Get" width="545" height="402" />
+            <h3>Give + Get – Charity Challenger App</h3>
+            <p>
+              Give + Get is a modern charity app. “Give”, while joining a community of active people
+              who complete challenges and reap the rewards they offer; “Get”.
+            </p>
+          </li>
+          <li>
+            <img src="./images/gallery/image3.jpg" alt="Voken" width="545" height="402" />
+            <h3>Voken – Shared Childcare App</h3>
+            <p>
+              Voken lets people arrange childcare with families they trust, earn tokens and use for
+              your own requests.
+            </p>
+          </li>
+          <li>
+            <img src="./images/gallery/image4.jpg" alt="Chattii" width="545" height="402" />
+            <h3>Chattii – Disability Dating App</h3>
+            <p>
+              Chattii is born from the need to provide a space for people living with disabilities
+              to connect, chat, and explore their love life.
+            </p>
+          </li>
+        </ul>
+        <button type="button">See more</button>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
