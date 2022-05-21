@@ -10,7 +10,6 @@
 body {
     font-family: var(--main-font);
     color: var(--main-text-color);
-    background-color: burlywood;
 }
 
 
@@ -21,7 +20,7 @@ h1, h2, h3, h4, h5, h6, p ,ul {
 
 img {
     display:block;
-    weight: 100%;
+    width: 100%;
     height:auto;
 }
 
@@ -43,6 +42,8 @@ ul {
 
 /* Header styles*/
 .header {
+    position: absolute;
+    width: 100%;
     padding: 20px 0;
 }
 
@@ -100,8 +101,12 @@ ul {
 
 /* Hero styles*/
 .hero {
+    width: 1440px;
+    margin: 0 auto;
     padding-top: 240px;
     padding-bottom: 270px;
+
+    background-image: url(../images/hero/hero-bg.jpg);
 }
 
 .hero-title {
@@ -135,7 +140,17 @@ ul {
 
 
 /* Step styles*/
+.step {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.step .container {
+    text-align: center;
+}
+
 .step-title {
+    margin-bottom: 35px;
     font-size: 41px;
     line-height: 1.22;
     text-align: center;
@@ -143,10 +158,24 @@ ul {
 }
 
 .step-text {
+    margin-bottom: 85px;
     font-size: 12px;
     line-height: 2.5;
     text-align: center;
     color: var(--main-text-color);
+}
+
+.step-filter-list {
+    display: flex;
+    justify-content: center;
+}
+
+.step-filter-item:not(:last-child) {
+    margin-right: 100px;
+}
+
+.step-filter-item {
+    margin-bottom: 50px;
 }
 
 .step-btn {
@@ -156,6 +185,7 @@ ul {
     line-height: 1.58;
     text-align: center;
     color: var(--black-text-color);
+    cursor: pointer;
 }
 
 .active {
@@ -163,20 +193,25 @@ ul {
 }
 
 .step-subtitle {
+    margin-bottom: 23px;
     font-size: 19px;
     line-height: 1.47;
     color: var(--black-text-color);
 }
 
 .step-item-text {
+    height: 90px;
+
     font-size: 16px;
     line-height: 1.88;
     color: var(--main-text-color);
 }
 
 .step-contact-btn {
+    margin-top: 50px;
     display: inline-block;
     padding: 15px 49px;
+    
 
     font-size: 15px;
     line-height: 2;
@@ -185,9 +220,23 @@ ul {
     border-radius: 4px;
 }
 
+.step-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -40px;
+    margin-bottom: -40px;
+}
+
 .step-list-item {
-    width: 560px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    padding: 38px 40px;
+
     height: 220px;
+    flex-basis: calc((100% - (40px*2)) / 2);
+
     border: 1px solid #E8E8E8;
     border-radius: 0px;
+    text-align: left;
 }
+
